@@ -9,9 +9,7 @@ using namespace std;
 #define win Congratulations, you won!
 #define loose Sorry, you lost. Please try again.
 
-int main()
-{
-
+int main(){
     int choice;
     int i;
     int comp;
@@ -29,28 +27,17 @@ int main()
     cout << "Please enter your choice.";
     cin >> choice;
 
-
     //Now for the IF/Else statements.
-
-    if (choice == 1) //Rock
-    {
+    if (choice == 1) { //Rock
         cout << "You picked Rock.\n";
         cout << "Now here was my choice.\n";
-    }
-
-    else if (choice == 2) //Paper
-    {
+    } else if (choice == 2) {//Paper
         cout << "You picked Paper.\n";
         cout << "Now here was my choice.\n";
-    }
-
-    else if (choice == 3) //Scissors
-    {
+    } else if (choice == 3) {   //Scissors
         cout << "You picked Scissors.\n";
         cout << "Now here was my choice.\n";
-    }
-    else if (choice == 4)
-    {
+    } else if (choice == 4) {
         return 0;
     }
     //*************************************************
@@ -58,31 +45,22 @@ int main()
     srand(seed); //For the random generator.
 
     comp = rand() % 3 + 1; //Computers pick.
-
-    if (comp == 1) //Computer rock
-    {
+    if (comp == 1) { //Computer rock
         res = 1;
         cout << "Rock!\n";
-    }
-
-    else if (comp == 2) //Computer paper
-    {
+    } else if (comp == 2) { //Computer paper
         res = 2;
         cout << "Paper!\n";
-    }
-    else if (comp == 3)  // Computer scissors
-    {
+    } else if (comp == 3)  { // Computer scissors
         res = 3;
         cout << "Scissors!\n";
     }
 
-    switch (res)
-    {
+    switch (res) {
     case '1': cout << "test";
     case '2': cout << "tests";
     case '3': cout << "test";
     }
-
 
     system("pause");
     return 0;

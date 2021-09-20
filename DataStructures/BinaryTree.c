@@ -9,9 +9,9 @@ For: CS 2413 Data structures Section 501
 
 //struct for BST
 struct BST{
-int data;
-struct BST *left;
-struct BST *right;
+  int data;
+  struct BST *left;
+  struct BST *right;
 };
 
 typedef struct BST NODE;
@@ -161,85 +161,85 @@ void print_array(int ints[], int len);
 
 /*Function to store all the paths from the root node to all leaf nodes in a array*/
 void print_paths(NODE *node){
-int path[1000];
-print_paths_recur(node, path, 0);
+  int path[1000];
+  print_paths_recur(node, path, 0);
 }
 
 /*Function which helps the print_path to recursively print all the nodes*/
 void print_paths_recur(NODE *node, int path[], int path_len){
-if (node == NULL)
-return;
+  if (node == NULL)
+    return;
 
-path[path_len] = node->data;
-path_len++;
+  path[path_len] = node->data;
+  path_len++;
 
-if (node->left == NULL && node->right == NULL){
-print_array(path, path_len);
-}
-else{
-print_paths_recur(node->left, path, path_len); //recursively calls the left node of the tree
-print_paths_recur(node->right, path, path_len); //recursively calls the right node of the tree
-}
+  if (node->left == NULL && node->right == NULL){
+    print_array(path, path_len);
+  }
+  else{
+    print_paths_recur(node->left, path, path_len); //recursively calls the left node of the tree
+    print_paths_recur(node->right, path, path_len); //recursively calls the right node of the tree
+  }
 }
 
 /*Function to print all the paths */
 void print_array(int ints[], int len){
-int i;
-for (i = 0; i < len; i++){
-printf("%d -> ", ints[i]);
-}
-printf("\n");
+  int i;
+  for (i = 0; i < len; i++){
+  printf("%d -> ", ints[i]);
+  }
+  printf("\n");
 }
 
 /*to create the format display for program*/
 int main(){
-int data, ch, i, n;
-NODE *root=NULL;
-while (1){
-printf("\n1.Create an integer Binary Tree");
-printf("\n2.Display Tree in console ");
-printf("\n3.Remove a specific node in the tree");
-printf("\n4.Search an item in Binary Tree \n5.Exit");
-printf("\nEnter your choice: ");
-scanf("%d", &ch);
+  int data, ch, i, n;
+  NODE *root=NULL;
+  while (1){
+  printf("\n1.Create an integer Binary Tree");
+  printf("\n2.Display Tree in console ");
+  printf("\n3.Remove a specific node in the tree");
+  printf("\n4.Search an item in Binary Tree \n5.Exit");
+  printf("\nEnter your choice: ");
+  scanf("%d", &ch);
 
-switch (ch){
-  /*To insert an item*/
-  case 1: printf("\n How many items you want to enter?: " );
-    scanf("%d", &n);
-    printf("\nEnter the values to create BST separated by space\n");
-    for(i=0; i<n; i++){
-    scanf("%d", &data);
-    root=createtree(root, data);
+  switch (ch){
+    /*To insert an item*/
+    case 1: printf("\n How many items you want to enter?: " );
+      scanf("%d", &n);
+      printf("\nEnter the values to create BST separated by space\n");
+      for(i=0; i<n; i++){
+      scanf("%d", &data);
+      root=createtree(root, data);
+      }
+      break;
+
+    /*To do inorder traversal*/
+    case 2: printf("\nInorder Traversal: \n");
+      inorder(root);
+      printf("\nPreorder Traversal: \n");
+      preorder(root);
+      printf("\nPostorder Traversal: \n");
+      postorder(root);
+      break;
+
+    /*Enter the element to delete*/
+    case 3: printf("\nEnter the element to delete: ");
+      scanf("%d", &data);
+      root=del(root, data);
+      break;
+    /*Search for an element*/
+    case 4: printf("\nEnter the element to search: ");
+      scanf("%d", &data);
+      root=search(root, data);
+      printf("\n Visiting trace path \n");
+      print_paths(root);
+      break;
+
+    /*Exit the prorgam*/
+    case 5: exit(0);
+      default:printf("\nWrong option");
+      break;
     }
-    break;
-
-  /*To do inorder traversal*/
-  case 2: printf("\nInorder Traversal: \n");
-    inorder(root);
-    printf("\nPreorder Traversal: \n");
-    preorder(root);
-    printf("\nPostorder Traversal: \n");
-    postorder(root);
-    break;
-
-  /*Enter the element to delete*/
-  case 3: printf("\nEnter the element to delete: ");
-    scanf("%d", &data);
-    root=del(root, data);
-    break;
-  /*Search for an element*/
-  case 4: printf("\nEnter the element to search: ");
-    scanf("%d", &data);
-    root=search(root, data);
-    printf("\n Visiting trace path \n");
-    print_paths(root);
-    break;
-
-  /*Exit the prorgam*/
-  case 5: exit(0);
-    default:printf("\nWrong option");
-    break;
-}
-}
+  }
 }

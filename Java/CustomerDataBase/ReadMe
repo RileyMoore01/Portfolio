@@ -1,4 +1,4 @@
-Author: Riley Moore
+Author: Riley Moore, Mackenzie Hamelett, and Noah Brunnet
 Purpose: Read in orders and customer records, store records, then find the best travel plan according to that Customers type. Finally print records and plan to new text file.
 
 This program reads in customer orders from a text file in the format of: 

@@ -1,3 +1,5 @@
+//This file executes the methods for creating a linked list in java
+//This version is iterative, using as little built-in methodology as possible
 public class LinkedList {
 
 	public Node head;

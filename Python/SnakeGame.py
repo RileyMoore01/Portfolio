@@ -1,5 +1,5 @@
 #Simple Snake Game in Python 3
-#Part 1: Getting Started
+#Riley Moore
 
 import turtle
 import time

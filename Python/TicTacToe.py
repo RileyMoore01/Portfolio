@@ -1,4 +1,5 @@
-# Implementation of Two Player Tic-Tac-Toe game in Python
+# Implementation of Two Player Tic-Tac-Toe game in Python 3
+#Riley Moore
 
 theBoard = {'7': ' ', '8': ' ', '9': ' ',
             '4': ' ', '5': ' ', '6': ' ',

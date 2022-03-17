@@ -1,3 +1,8 @@
+#Riley Moore
+#Purpose: Tired of being slow on TypeRacer? This bot will solve all your problems by reaching un-human like typing speed
+#Using OpenCV, Selenium, and WebDriver
+#Opens website, grabs text box, converts to text, then writes text in the assigned textbox
+
 import cv2
 import pytesseract
 import time

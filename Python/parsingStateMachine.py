@@ -1,5 +1,6 @@
 #Read the Read.Me for instructions on use
 #Created by Riley Moore, Jacob Barlett, and Sam Wilson
+#Reads in a binary sequence and will accept or reject the sequnce by terms of NFA
 
 from operator import indexOf
 import re

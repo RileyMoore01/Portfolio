@@ -1,0 +1,25 @@
+4
+Randara
+Melkara
+00256789 Yes
+.05
+rmelk@gmail.com
+806-123-4567
+Chauncey
+Rozario
+00256790 No
+100
+crozario@ttu.edu
+806-345-6789
+Mary
+Smith
+00256791 No
+234
+msmith@airforce.gov
+405-931-1234
+Otto
+Preminger
+00256792 Yes
+.10
+oprem@gmail.com
+817-323-4567

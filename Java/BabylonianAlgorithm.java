@@ -3,6 +3,7 @@ This program takes a keyboard integer input, runs its through
 the Babylonian algorithm i number of times. Outputs the result. 
 Riley Moore - ObjectOrientedProgramming
 */
+
 import java.util.Scanner;
 
 public class Main {

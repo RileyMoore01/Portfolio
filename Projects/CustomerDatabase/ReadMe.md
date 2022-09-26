@@ -3,15 +3,15 @@ Purpose: Read in orders and customer records, store records, then find the best 
 
 This program reads in customer orders from a text file in the format of: 
 
-  • Number of customers
-  • First Name
-  • Last Name
-  • Customer Type (Regular, Student, Military, Senior)
-  • Reward Number or NA if a regular customer, School Name if a student, Military Branch if in the military, Birth
+  - Number of customers
+  - First Name
+  - Last Name
+  - Customer Type (Regular, Student, Military, Senior)
+  - Reward Number or NA if a regular customer, School Name if a student, Military Branch if in the military, Birth
   Year if a senior
-  • Email Address
-  • Mobile Phone Number
-  • …repeated
+  - Email Address
+  - Mobile Phone Number
+  - …repeated
   
   
   Once the CustomerArray file is called in main, the arguments will be read in and stored into the Customer object array.

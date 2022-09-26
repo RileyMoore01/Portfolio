@@ -1,4 +1,4 @@
-Overview:
+- **Overview:** <br />
   This program reads in 3 text files {customers, products, and cart} and stores this information in the corresponding object.
   Once the arrays(using ArrayList) are defined the user may be able to search for the product under their customer account on the GUI.
   A new customer may create an account upon login, recieving a reward number to login with as well as last name.
@@ -7,7 +7,7 @@ Overview:
   Other Functions: Add customers, remove customers, change customer information, privacy leak and eception handling.
 
 
-Objective: 
+- **Objective:** <br />
 Develop an ecommerce system based on the given scenario.
 Scenario: You are a Software Engineer Level I and are charged with the task of developing an object-oriented system to allow
 customers to register, to log on, to log off, to search for products, and to put products into a shopping cart. This system must

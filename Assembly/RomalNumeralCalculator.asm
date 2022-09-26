@@ -209,5 +209,4 @@ finished: mov al, 00h			;Once fully repeated adn value 0, add a null to the end 
 	mov edi, OFFSET resultR		;Set edi to the beginning of OFFSET resultR to be read to display
 ret								;Return to main to repeat and check for rules again
 convert ENDP
-
 END main

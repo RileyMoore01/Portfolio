@@ -1,1 +1,40 @@
-<mxfile host="app.diagrams.net" modified="2022-10-20T12:19:35.504Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" version="20.4.2" etag="fGnPhJOrBis_quGvcZHu" type="github"><diagram id="nGY78GgrmlLPz7ZSxJ6B">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-20T16:50:52.793Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="D0XgDNCApvENwcPoeecm" version="20.4.2" type="github">
+  <diagram id="nGY78GgrmlLPz7ZSxJ6B" name="Page-1">
+    <mxGraphModel dx="1422" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ga5Y2FUn5J8a-sesneGH-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Person&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga5Y2FUn5J8a-sesneGH-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Employee&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga5Y2FUn5J8a-sesneGH-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Alumnius&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga5Y2FUn5J8a-sesneGH-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Studnet&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga5Y2FUn5J8a-sesneGH-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Staff&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="560" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga5Y2FUn5J8a-sesneGH-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Faculty&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="85" y="680" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga5Y2FUn5J8a-sesneGH-7" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Student&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Assistant&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="800" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga5Y2FUn5J8a-sesneGH-8" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Person&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1050" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga5Y2FUn5J8a-sesneGH-9" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Person&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1160" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga5Y2FUn5J8a-sesneGH-10" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Person&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="85" y="920" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

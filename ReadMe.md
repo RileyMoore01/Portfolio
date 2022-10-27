@@ -27,7 +27,6 @@ A Little About Me:
             happy hour. 
             
             I am also currently developing a patent for Integri Tees. 
-            
             The reason I included this section is to tell you a little about what I do. However, I am not aloud to show the 
             hard work I have been putting in for the patent or the internship. I would simply like a chance to show a company 
             that I am able to work in a team and be innovative with critical thinking. 

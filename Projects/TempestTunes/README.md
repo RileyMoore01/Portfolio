@@ -1,4 +1,4 @@
-<h1><strong>Tempest Tunes</strong></h1>
+<h1 align="center"><strong>Tempest Tunes</strong></h2>
 
 <h1>Motivation</h1>
 <p>

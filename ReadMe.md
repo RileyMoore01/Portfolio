@@ -57,7 +57,7 @@
 
   <summary><b>⚡ Recent GitHub Activity</b></summary>
   
-   <a href="https://github.com/SubhadeepZilong"><img alt="SubhadeepZilong's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=RileyMoore01&custom_title=SubhadeepZilong's%20Contribution%20Graph&theme=react-dark" /></a>
+   <a href="https://github.com/SubhadeepZilong"><img alt="My Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=RileyMoore01&custom_title=SubhadeepZilong's%20Contribution%20Graph&theme=react-dark" /></a>
    
    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 

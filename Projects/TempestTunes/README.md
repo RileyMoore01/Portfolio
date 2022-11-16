@@ -3,7 +3,7 @@
 <br />
 
 <div>
-    <img src="logo.png" />
+    <img src="/img/logo.png" />
 </div>
 
 <h1>Motivation</h1>

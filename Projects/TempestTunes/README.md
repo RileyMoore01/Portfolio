@@ -1,4 +1,10 @@
 <h1 align="center"><strong>Tempest Tunes</strong></h2>
+<br />
+<br />
+
+<div>
+    <img src="logo.png" />
+</div>
 
 <h1>Motivation</h1>
 <p>

@@ -59,7 +59,7 @@
   
    <a href="https://github.com/SubhadeepZilong"><img alt="My Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=RileyMoore01&custom_title=Riley's%20Contribution%20Graph&theme=react-dark" /></a>
    
-   <b>Note:</b> Ever since I started at work most of my daily activity has been on GitLab.
+   <b align="center">Note:</b> Most of my daily commits have been on GitLab due to work.
    
    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 

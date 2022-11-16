@@ -38,7 +38,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 ## 🔥 Streak Stats
-<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=SubhadeepZilong&theme=algolia" alt="SubhadeepZilong" /></p>
+<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=RileyMoore01&theme=algolia" alt="SubhadeepZilong" /></p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 

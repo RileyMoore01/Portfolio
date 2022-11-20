@@ -1,5 +1,3 @@
-Here is some of the work I did during the development of my patent for IntegriTees.
+I am fortunate enough to work on a patent for Integri Tees.
 
-This is all work that I ended up discarding after taking a new approach so not the best work.
-
-With this said I can not show most of code relating to this matter or else there would be no need for a patent.
+As I am not able to show much of my work considering it is a patent, I will only be showing old work that did not make any use of my development cycle.

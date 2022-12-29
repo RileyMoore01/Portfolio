@@ -1,4 +1,4 @@
-// This program plays you in a game of Rock/Paper/Scissors
+// Rock/Paper/Scissors game
 #include <iostream>
 #include <cstdlib>
 #include <limits>

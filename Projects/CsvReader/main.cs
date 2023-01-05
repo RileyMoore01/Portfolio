@@ -1,22 +1,21 @@
+using CsvHelper;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Pcca.Core.Config;
+using Pcca.Data.Models.GinEquityMaster;
 using Pcca.Data.Persistence;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using CsvHelper;
-using System.Globalization;
-using CsvHelper.Configuration.Attributes;
-using System;
-using Pcca.Data.Models.GinEquityMaster;
 
-namespace GinTools.Core.Features.OtherAllocations;
+namespace GinTools.Core.Features.GinDividends;
 
 public class Upload
 {
@@ -34,24 +33,24 @@ public class Upload
     {
         [CsvHelper.Configuration.Attributes.Index(0)]
         public string CropYear { get; set; }
+
         [CsvHelper.Configuration.Attributes.Index(1)]
         public string GinCode { get; set; }
+
         [CsvHelper.Configuration.Attributes.Index(2)]
         public string AccountNo { get; set; }
+
         [CsvHelper.Configuration.Attributes.Index(3)]
         public string LotNo { get; set; }
+
         [CsvHelper.Configuration.Attributes.Index(4)]
-        public string TaxId { get; set; }
+        public string CompanyNo { get; set; }
+
         [CsvHelper.Configuration.Attributes.Index(5)]
-        public string ItemClass { get; set; }
+        public string DividendTaxId { get; set; }
+
         [CsvHelper.Configuration.Attributes.Index(6)]
-        public string PendingItemClassAmount { get; set; }
-        [CsvHelper.Configuration.Attributes.Index(7)]
-        public string ItemClassAmount { get; set; }
-        [CsvHelper.Configuration.Attributes.Index(8)]
-        public string PendingItemClassQuantity { get; set; }
-        [CsvHelper.Configuration.Attributes.Index(9)]
-        public string ItemClassQuantity { get; set; }
+        public string DividendPercentage { get; set; }
     }
 
     public class CommandValidator : AbstractValidator<Command>
@@ -75,69 +74,68 @@ public class Upload
     public class CommandHandler : IRequestHandler<Command, List<Allocation>>
     {
         private readonly GinEquityDbContext db;
-        private readonly AppConfig appConfig;
-        public CommandHandler(GinEquityDbContext db, IOptions<AppConfig> appConfig)
-        {
-            this.db = db;
-            this.appConfig = appConfig.Value;
-        }
+
+        public CommandHandler(GinEquityDbContext db) => this.db = db;
 
         public async Task<List<Allocation>> Handle(Command request, CancellationToken token)
         {
             /****************************************
-             *                                      *
-             *          CSV HELPER                  *
-             *                                      *
-            ****************************************/
+            *                                      *
+            *          CSV HELPER                  *
+            *                                      *
+           ****************************************/
 
             //Create stream to read in the file 
             //Default Path: C:\Users\r.moore\Documents\PCCA\pcca\GinTools\GinTools
             var stream = request.File.OpenReadStream();
             var reader = new StreamReader(stream);
 
-            //Declare properties
+            //Declare Properties
             var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
             var result = new List<Allocation>();
 
-            //CSV Validation
-            if (request.File.FileName.EndsWith(".csv"))
+            try
             {
-                //Read in the stream data using csvHelper library
-                //CsvData is the all essential properties of an allocation
-                //Indexing has to be in the same order that the helper will read it in
-                var data = csv.GetRecords<CsvData>();
-                result = new List<Allocation>();
-
-                //Convert the read-in data to the Allocation class with non-essential properties
-                foreach (var record in data)
+                //CSV Validation
+                if (request.File.FileName.EndsWith(".csv"))
                 {
-                    if (record.CropYear != "")
-                    {
-                        var temp = new Allocation
-                        {
-                            CropYear = short.Parse(record.CropYear),
-                            AccountNo = short.Parse(record.AccountNo),
-                            GinCode = int.Parse(record.GinCode),
-                            LotNo = byte.Parse(record.LotNo),
-                            TaxId = record.TaxId,
-                            ItemClass = record.ItemClass,
-                            PendingItemClassAmount = decimal.Parse(record.PendingItemClassAmount),
-                            ItemClassAmount = decimal.Parse(record.ItemClassAmount),
-                            PendingItemClassQuantity = decimal.Parse(record.PendingItemClassQuantity),
-                            ItemClassQuantity = decimal.Parse(record.ItemClassQuantity),
-                        };
+                    //Read in the stream data using csvHelper library
+                    //CsvData is the all essential properties of an allocation
+                    //Indexing has to be in the same order that the helper will read it in
+                    var data = csv.GetRecords<CsvData>();
+                    result = new List<Allocation>();
 
-                        result.Add(temp);
+                    //Convert the read-in data to the Allocation class with non-essential properties
+                    foreach (var record in data)
+                    {
+                        if (record.CropYear != "")
+                        {
+                            var temp = new Allocation
+                            {
+                                CropYear = short.Parse(record.CropYear),
+                                GinCode = int.Parse(record.GinCode),
+                                AccountNo = short.Parse(record.AccountNo),
+                                LotNo = byte.Parse(record.LotNo),
+                                CompanyNo = byte.Parse(record.CompanyNo),
+                                DividendTaxId = record.DividendTaxId,
+                                DividendPercentage= decimal.Parse(record.DividendPercentage),
+                            };
+
+                            result.Add(temp);
+                        }
                     }
                 }
             }
 
+            catch(Exception ex)
+            {
+                //Some user feedback here
+            }
             /****************************************
-             *                                      *
-             *             Original                 *
-             *                                      *
-            ****************************************/
-            //First approach of reading in the csv data by hand
+            *                                      *
+            *             Original                 *
+            *                                      *
+           ****************************************/
 
             //var stream = request.File.OpenReadStream();
             //var fileName = request.File.FileName;
@@ -160,9 +158,10 @@ public class Upload
             //    List<string> rawValues = line.Split(',').ToList();
             //    var lineValues = new List<string>();
 
+
             //    //Format & Validate comma seperation
             //    int index = 0;
-            //    while(index < rawValues.Count)
+            //    while (index < rawValues.Count)
             //    {
             //        var temp = "";
             //        if (rawValues[index].Contains("\\") || rawValues[index].Contains('"'))
@@ -178,7 +177,7 @@ public class Upload
             //        index++;
             //    }
 
-            //    //Validate incoming data
+            //    //Read in each property seperatley and check they are valid
             //    short cropYear = 0;
             //    short.TryParse(lineValues[0], out cropYear);
             //    if (cropYear < 0 && cropYear > 3000)
@@ -199,46 +198,30 @@ public class Upload
             //    if (!(lotNo >= 0))
             //        allocation.Message.Add("Invalid Lot No");
 
-            //    string taxId = lineValues[4];
-            //    if (taxId == null)
-            //        allocation.Message.Add("Invlaid Tax Id");
+            //    byte companyNo = 0;
+            //    byte.TryParse(lineValues[4], out companyNo);
+            //    if (!(companyNo > 0))
+            //        allocation.Message.Add("Invlaid Account No");
 
-            //    string itemClass = lineValues[5];
-            //    if (itemClass == null)
-            //        allocation.Message.Add("Invlaid Item Class");
+            //    string dividendTaxId = lineValues[5];
+            //    if (dividendTaxId == null)
+            //        allocation.Message.Add("Invlaid Dividend Tax Id");
 
-            //    decimal pendingAmount = 0;
-            //    decimal.TryParse(lineValues[6], out pendingAmount);
-            //    if (!(pendingAmount > 0))
-            //        allocation.Message.Add("Invalid Pending Item Class Amount");
+            //    decimal dividendPercentage = 0;
+            //    decimal.TryParse(lineValues[6], out dividendPercentage);
+            //    if (!(dividendPercentage >= 0))
+            //        allocation.Message.Add("Invalid Percentage");
 
-            //    decimal amount = 0;
-            //    decimal.TryParse(lineValues[7], out amount);
-            //    if (!(amount > 0))
-            //        allocation.Message.Add("Invalid Item Class Amount");
-
-            //    decimal pendingQuantity = 0;
-            //    decimal.TryParse(lineValues[7], out pendingQuantity);
-            //    if (!(pendingQuantity > 0))
-            //        allocation.Message.Add("Invalid Pending Item Class Quantity");
-
-            //    decimal quantity = 0;
-            //    decimal.TryParse(lineValues[7], out quantity);
-            //    if (!(quantity > 0))
-            //        allocation.Message.Add("Invalid Item Class Quantity");
-
-            //    //Assign properties to allocation
+            //    //Store seperated properties in the current instance of Allocation
             //    allocation.CropYear = cropYear;
             //    allocation.GinCode = ginCode;
             //    allocation.AccountNo = accountNo;
             //    allocation.LotNo = lotNo;
-            //    allocation.TaxId = taxId;
-            //    allocation.ItemClass = itemClass;
-            //    allocation.PendingItemClassAmount = pendingAmount;
-            //    allocation.ItemClassAmount = amount;
-            //    allocation.PendingItemClassQuantity = pendingQuantity;
-            //    allocation.ItemClassQuantity = quantity;
+            //    allocation.CompanyNo = companyNo;
+            //    allocation.DividendTaxId = dividendTaxId;
+            //    allocation.DividendPercentage = dividendPercentage;
 
+            //    //Add the current instance of allocation to allocations list
             //    allocations.Add(allocation);
             //}
 
@@ -256,31 +239,34 @@ public class Upload
                     && a.GinCode == record.GinCode
                     && a.AccountNo == record.AccountNo
                     && a.LotNo == record.LotNo
-                    && a.TaxId == record.TaxId
-                    && a.ItemClass == record.ItemClass) > 1)
+                    && a.CompanyNo == record.CompanyNo
+                    && a.DividendTaxId == record.DividendTaxId) > 1)
                 {
-                    record.Message.Add($"Duplicate reecord at key(s): Crop Year = {record.CropYear}" +
+                    record.Message.Add($"Duplicate record at key(s): Crop Year = {record.CropYear}" +
                         $"Gin Code = {record.GinCode}, Account No = {record.AccountNo}," +
-                        $"Lot No = {record.LotNo}, Tax Id = {record.TaxId}," +
-                        $"Item Class = {record.ItemClass}");
+                        $"Lot No = {record.LotNo}, Company No = {record.CompanyNo}," +
+                        $"Tax Id = {record.DividendTaxId}");
                 }
 
                 //Remove duplicates in memory logic
-                var table = await db.OtherAllocations
+                var table = await db.GinDividends
                     .AnyAsync(a => a.CropYear == record.CropYear
                         && a.GinCode == record.GinCode
                         && a.AccountNo == record.AccountNo
                         && a.LotNo == record.LotNo
-                        && a.TaxId == record.TaxId
-                        && a.ItemClass == record.ItemClass, token);
+                        && a.CompanyNo == record.CompanyNo
+                        && a.DividendTaxId == record.DividendTaxId
+                        , token);
 
                 //Add message if duplicate
                 if (table)
-                    record.Message.Add("Record already exisits in the table: Crop Year = {record.CropYear}" +
+                    record.Message.Add($"Record already exisits in the table:" +
+                        $"Crop Year = {record.CropYear}" +
                         $"Gin Code = {record.GinCode}, Account No = {record.AccountNo}," +
-                        $"Lot No = {record.LotNo}, Tax Id = {record.TaxId}," +
-                        $"Item Class = {record.ItemClass} at line {result.IndexOf(record) + 2}");
+                        $"Lot No = {record.LotNo}, Company No = {record.CompanyNo}," +
+                        $"Tax Id = {record.DividendTaxId} at line {result.IndexOf(record) + 2}");
             }
+
             return result;
         }
     }

@@ -7,3 +7,7 @@ The goal of this program is to have an input of a jpg inlcuding the normal parki
 4. Once all spots are highlited, the new image is sent back to the user using the interface created.
 
 Members: Riley Moore and Sam Wilson
+
+
+<h1> Post Hackathon Update </h1>
+<p> We did not realize the workload this project would bring as this was our first hackathon. With this being said we underestimated how long this would take and only managed to reach the pixel manipulation / parking lot object detection for this project </p>

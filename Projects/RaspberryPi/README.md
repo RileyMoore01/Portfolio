@@ -10,5 +10,12 @@
 <p> From there, the employees will be shown a black-white image with only the differnces highlighted on the reference/difference image. </p> <br />
 
 <h1> Details </h1>
-<p> </p> <br />
-<p> </p> <br />
+<ul>
+  <li>Raspberry PI</li>
+  <li>HQ Raspberry Pi Camera Module</li>
+  <li>Ultrasonic sensor</li>
+  <li>Buzzer</li>
+  <li>GPIO Pin manipulation</li>
+  <li>Circuit board to manipulate the voltage control and sensor pulsing</li>
+  <li>Python / C / Linux commands</li>
+</ul>

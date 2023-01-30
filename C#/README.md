@@ -20,5 +20,3 @@
   <li>SCSS & JQuery</li>
   <li>Javascript</li>
 </ul>
-
-<h1>About</h1>

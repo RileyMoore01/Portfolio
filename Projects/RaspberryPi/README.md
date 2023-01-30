@@ -7,6 +7,7 @@
   <li>Raspberry PI</li>
   <li>HQ Raspberry Pi Camera Module</li>
   <li>Ultrasonic sensor</li>
+  <li>GUI (Tkinter)</li>
   <li>Buzzer</li>
   <li>GPIO Pin manipulation</li>
   <li>Circuit board to manipulate the voltage control and sensor pulsing</li>

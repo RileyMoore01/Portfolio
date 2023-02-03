@@ -2,4 +2,4 @@
 
 <h4> Just copy the url below and paste in your browser! </h4>
 
-**<a href="[rileymoore01.github.io](https://rileymoore01.github.io/)">rileymoore01.github.io</a>**
+**<a href="https://rileymoore01.github.io/">rileymoore01.github.io</a>**

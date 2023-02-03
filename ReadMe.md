@@ -1,6 +1,6 @@
 <h1 align="center">Hi <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35">, I'm Riley Moore</h1>
 <h3 align="center">I'm an Aspiring Developer and Student</h3>
-**<a href="https://rileymoore01.github.io/">rileymoore01.github.io</a>**
+**<a align="center" href="https://rileymoore01.github.io/">rileymoore01.github.io</a>**
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=subhadeepzilong&label=Profile%20views&color=0e75b6&style=flat" alt="subhadeepzilong" /> </p>
 

@@ -1,0 +1,29 @@
+.contact-container {
+    z-index: 999;
+    max-width: 600px;
+    min-height: 300px;
+
+    border-radius: 25px;
+    background-color: white;
+
+}
+
+.first-name-box {
+    z-index: 999;
+}
+
+.last-name-box {
+
+}
+
+.email-box {
+
+}
+
+.email-body-box {
+
+}
+
+.submission-button {
+
+}

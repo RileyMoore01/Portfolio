@@ -205,10 +205,8 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 200 !important;
 }
 .stars1 {
-    z-index: 200 !important;
     animation: space 180s ease-in-out infinite;
     background-image:
         radial-gradient(
@@ -243,7 +241,6 @@ body {
         );
     }
 .stars2 {
-    z-index: 200 !important;
     animation: space 240s ease-in-out infinite;
     background-image:
     radial-gradient(
@@ -278,7 +275,6 @@ body {
     );
 }
 .stars3 {
-    z-index: 200 !important;
     animation: space 300s ease-in-out infinite;
     background-image:
     radial-gradient(

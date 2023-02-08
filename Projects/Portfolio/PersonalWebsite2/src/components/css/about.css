@@ -10,8 +10,25 @@
     background-color: black;
 
     animation: 1s ease-out 0s 1 slideInFromLeft;
-    /* transform: translateX(calc((100vw / 2) - 200px));
-    transition: 2s; */
+    transform: translateX(calc((100vw / 2) - 200px));
+    transition: 2s;
+}
+
+.pearpi-container {
+    background-color: white;
+    color: white;
+}
+
+.conversion-container {
+
+}
+
+.drone-container {
+
+}
+
+.project-container {
+    z-index: 999;
 }
 
 @keyframes slideInFromLeft {

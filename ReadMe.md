@@ -54,7 +54,7 @@
 
   <summary><b>⚡ Recent GitHub Activity</b></summary>
   
-   <a href="https://github.com/SubhadeepZilong"><img alt="My Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=RileyMoore01&custom_title=Riley's%20Contribution%20Graph&theme=react-dark" /></a>
+   <a href="https://github.com/RileyMoore01"><img alt="My Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=RileyMoore01&custom_title=Riley's%20Contribution%20Graph&theme=react-dark" /></a>
    
    <b align="center">Note:</b> Most of my daily commits have been on GitLab due to work.
    

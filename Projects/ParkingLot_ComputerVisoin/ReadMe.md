@@ -10,4 +10,4 @@ Members: Riley Moore and Sam Wilson
 
 
 <h1> Post Hackathon Update </h1>
-<p> We did not realize the workload this project would bring as this was our first hackathon. With this being said we underestimated how long this would take and only managed to reach the pixel manipulation / parking lot object detection for this project </p>
+<p> We did not realize the workload this project would bring as this was our first hackathon. Not to mention 2 out of 4 of our team members ended up cancelling mid project as I believe the workload was too much for the group and some decided to quit on the spot. With this being said we underestimated how long this would take and only managed to reach the pixel manipulation / parking lot object detection for this project </p>

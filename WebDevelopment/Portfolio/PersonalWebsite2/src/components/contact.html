@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
@@ -16,11 +16,8 @@
 
 <nav>
     <div class="uk-grid" id="header-bar">
-        <!-- <div id="header-logo"">
-            <img src="/Website/images/mountain.png" alt="Mountain Icon">
-        </div> -->
         <h2 id="header-title">Riley Moore</h2>
-        
+
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
                 <li><a class="uk-text-success" href="index.html">Home</a></li>
@@ -32,14 +29,32 @@
     </div>
 </nav>
 
-<div class="contact-container">
-    <h3 style="padding-left: 10px;">Get in touch</h3>
-    <input class="first-name-box" type="textbox" />
-    <input class="last-name-box" type="textbox" />
-    <input class="email-box" type="textbox" />
-    <input class="email-body-box" type="textbox" />
-    <input type="button" class="uk-button-danger submission-button"
-</div>
+<form method="post" action="email.php">
+    <div class="contact-container">
+        <div class="container-content">
+            <h2 id="get-in-touch">Get in touch</h2>
+            <div class="uk-grid">
+                <div>
+                    <span>First Name:</span>
+                    <input class="first-name-box" type="textbox" />
+                </div>
+                <div>
+                    <span>Last Name:</span>
+                    <input class="last-name-box" type="textbox" />
+                </div>
+            </div>
+            <br />
+            <div>
+                <span>Email Address:</span>
+                <input class="email-box" type="textbox" />
+            </div>
+            <textarea class="email-body-box" name="" id="" cols="30" rows="10"></textarea>
+            <div>
+                <input type="submit" class="uk-button-danger submission-button" value="Submit"/>
+            </div>
+        </div>
+    </div>
+</form>
 
 <body>
     <div class="space stars1"></div>

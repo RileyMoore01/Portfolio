@@ -3,7 +3,7 @@ body {
     max-height: 100vh;
     height: 100%;
 
-    overflow: hidden;
+    overflow: auto !important;
 }
 
 img {
@@ -84,17 +84,23 @@ body {
     margin: 0
 }
 .mySlides {
-    display: none
+    display: none;
 }
 img {
     vertical-align: middle;
 }
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 600px;
     position: relative;
     margin: auto;
     z-index: 900;
 }
+
+.slideshow-image {
+    max-height: calc(100vh - 250px);
+    height: 100%;
+}
+
   /* Next & previous buttons */
 .prev,
 .next {
@@ -198,6 +204,8 @@ body {
     overflow: hidden;
 }
 .space {
+    max-height: 100vh;
+    height: 100%;
     background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
     border: 1px dashed purple;
     bottom: 0;

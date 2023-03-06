@@ -4,6 +4,14 @@ body {
     height: 100%;
 
     overflow: auto !important;
+    display: block;
+
+    font-family: Verdana, sans-serif;
+    margin: 0;
+
+    background: radial-gradient(circle at bottom, navy 0, black 100%);
+    height: 100vh;
+    overflow: hidden;
 }
 
 img {
@@ -24,6 +32,9 @@ img {
     font-size: 1.5rem !important;
 }
 
+.body-container {
+    
+}
 
 .uk-navbar-right {
     max-height: 50px;
@@ -46,14 +57,22 @@ img {
 .body-title, .university {
     color: white;
     text-align: center;
+    top: 0;
+    margin-bottom: 40px;
 }
 
 .redirect-container {
     padding: 20px;
-    position: relative;
+    position:absolute;
     justify-content: center;
-    text-align: center;
     z-index: 900;
+    bottom: 0;
+
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ID's */
@@ -79,25 +98,29 @@ img {
 * {
     box-sizing: border-box
 }
-body {
-    font-family: Verdana, sans-serif;
-    margin: 0
-}
+
 .mySlides {
     display: none;
 }
+
 img {
     vertical-align: middle;
 }
+
 .slideshow-container {
     max-width: 600px;
-    position: relative;
     margin: auto;
     z-index: 900;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .slideshow-image {
-    max-height: calc(100vh - 250px);
+    max-height: calc(100vh - 300px);
     height: 100%;
 }
 
@@ -145,17 +168,6 @@ img {
     position: absolute;
     top: 0;
 }
-  /* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #999999;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
 .active,
 .dot:hover {
     background-color: #111111;
@@ -197,12 +209,6 @@ img {
 
 
 /* --- Space Backgroung --- */
-
-body {
-    background: radial-gradient(circle at bottom, navy 0, black 100%);
-    height: 100vh;
-    overflow: hidden;
-}
 .space {
     max-height: 100vh;
     height: 100%;
@@ -333,3 +339,27 @@ body {
 }
 
 /* --- End Space Backgroung --- */
+
+  /* Media Query for smaller screen sizes */
+  @media only screen and (max-width: 1000px) {
+    .slideshow-image {
+        max-height: calc(100vh - 200px);
+        height: 100%;
+        padding-top: 40px;
+    }
+
+    .redirect-container {
+        padding: 20px;
+        position:absolute;
+        justify-content: center;
+        z-index: 900;
+        bottom: 0;
+    
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+}
+  /* End of Media Query */

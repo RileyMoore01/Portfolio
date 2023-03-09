@@ -3,9 +3,9 @@
 ; Assignment #6
 ; This program converts Roman Numerals to Arabic numerals using integer conversion.
 ; I check the unquie roman numerals {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1}
-;Once value is found, find corresponding symbol {"I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"}
-;Then send that symbol to edi, subtract that value from esi, repeat until esi = 0
-;Once finsihed add null terminator, return to main, repeat until user input 0 is reached or user terminated
+; Once value is found, find corresponding symbol {"I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"}
+; Then send that symbol to edi, subtract that value from esi, repeat until esi = 0
+; Once finsihed add null terminator, return to main, repeat until user input 0 is reached or user terminated
 
 INCLUDE Irvine32.inc
 .data
@@ -63,12 +63,15 @@ EndProgram: mov edx, OFFSET endPrompt
 
 	exit
 main ENDP
+
 ;-----------------------------------------------------------------------
-;Requires:
-;Returns: EDI pointing to the new string converted to Roman Numerals
-;Recieves: EDX pointing to the input string in Arabic Numeral form
+; Requires:
+; Returns: EDI pointing to the new string converted to Roman Numerals
+; Recieves: EDX pointing to the input string in Arabic Numeral form
+
 convert PROC
 ;-----------------------------------------------------------------------
+
 Down_List:				;Loop to find the correct value for the correct symbol
 	cmp esi, 30303031h
 	JAE L1000			;Jump to corresponding L loop to convert to roman numerals into edi and subtract the value needed
@@ -207,6 +210,7 @@ L1:sub esi, 1h
 finished: mov al, 00h			;Once fully repeated adn value 0, add a null to the end of edi
 	mov [edi], al
 	mov edi, OFFSET resultR		;Set edi to the beginning of OFFSET resultR to be read to display
-ret								;Return to main to repeat and check for rules again
+	
+ret					;Return to main to repeat and check for rules again
 convert ENDP
 END main

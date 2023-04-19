@@ -1,0 +1,6 @@
+Services: 
+    1.) BIOS Update
+    2.) Website architecture
+    3.) Hardware installation / fixes
+    4.) Consulation calls
+        - Anything over 15min = $30

@@ -4,9 +4,6 @@ using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using Pcca.Core.Config;
-using Pcca.Data.Models.GinEquityMaster;
-using Pcca.Data.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -15,7 +12,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace GinTools.Core.Features.GinDividends;
+namespace hiddenForPrivacyReasons;
 
 public class Upload
 {
@@ -73,9 +70,9 @@ public class Upload
 
     public class CommandHandler : IRequestHandler<Command, List<Allocation>>
     {
-        private readonly GinEquityDbContext db;
+        private readonly hiddenForPrivacyReasons db;
 
-        public CommandHandler(GinEquityDbContext db) => this.db = db;
+        public CommandHandler(hiddenForPrivacyReasons db) => this.db = db;
 
         public async Task<List<Allocation>> Handle(Command request, CancellationToken token)
         {
@@ -86,7 +83,6 @@ public class Upload
            ****************************************/
 
             //Create stream to read in the file 
-            //Default Path: C:\Users\r.moore\Documents\PCCA\pcca\GinTools\GinTools
             var stream = request.File.OpenReadStream();
             var reader = new StreamReader(stream);
 

@@ -14,4 +14,4 @@
 
 <h1>Deployment</h1>
 <p>To run, simply copy this branch and run with live server in visual studio code or your perfered IDE</p>
-<p> Or you can go to https://rileymoore01.github.io/PasswordGenerator/</p>
+<p> You can also go to https://rileymoore01.github.io/PasswordGenerator/</p>

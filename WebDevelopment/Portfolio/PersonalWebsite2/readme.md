@@ -4,4 +4,4 @@
 
 **<a href="https://rileymoore01.github.io/">rileymoore01.github.io</a>**
 
-<strong>Note:</strong><p>Not robust (Laptop Window size only)</p>
+<div style="display:inline-block"><strong>Note:</strong><p>Not robust (Laptop Window size only)</p></div>

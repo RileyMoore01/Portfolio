@@ -1,0 +1,5 @@
+nano programName - opens the c file in terminal (ctrl + X to exit)
+gcc -o name name.py - runs a c file
+
+###  To rotate touch screen
+DISPLAY=:0 xrandr --output HDMI-1 --rotate left

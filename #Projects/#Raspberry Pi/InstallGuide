@@ -1,0 +1,7 @@
+Enable Camera:
+  - sudo raspi-config
+  - Interface Options -> Enable Legacy Camera
+  - reboot
+  
+Code:
+  - Gather materials from GitHub

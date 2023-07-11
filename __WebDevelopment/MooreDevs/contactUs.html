@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="js/app.js"></script>
+        <title>MooreDevs</title>
+    </head>
+
+<nav id="nav-bar">
+    <div uk-grid>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>  
+                <div class="logo">
+                    <h1><a id="logo-redirect" href="index.html">Moore Devs</a></h1>
+                </div>
+                <div class="menu-items">
+                    <li><a class="non-active" href="index.html">Home</a></li>
+                    <li><a class="non-active" href="services.html">Services</a></li>
+                    <li><a class="non-active" href="projects.html">Portfolio</a></li>
+                    <li><a class="active" href="#">Contact Us</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    
+<form method="post" action="https://formsubmit.co/MooreDevs.Co@outlook.com">
+    <div class="contact-container">
+        <h5>Email Address</h5>
+        <input id="input-email" type="email" name="email" placeholder="Email Address" required>
+        <br />
+        <br />
+        <div>
+            <h5>Subject</h5>
+            <select id="input-subject" name="QueryType" required> 
+                <option value="website">Website Development</option>
+                <option value="hardware">Hardware Issues</option>
+                <option value="consultation">Consultation Call</option>
+            </select>
+        </div>
+        <h5>Email Body</h5>
+        <textarea id="email-subject" name="Description" placeholder="Message" required></textarea>
+        <div class="container-content">
+            <button id="submit" class="uk-button-danger uk-button" style="border-radius: 25px;" type="submit">Send</button>
+        </div>
+        <div class="container-content" required>
+            <input id="input-contact" type="hidden" name="_next" value="" >
+        </div>
+    </div>
+</form>
+</html>

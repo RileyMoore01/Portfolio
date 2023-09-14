@@ -1,2 +1,3 @@
 # WeatherApp
-Making a clean weather app design connected to a weather API
+Visit at https://rileymoore01.github.io/WeatherApp/
+You may enter your city name or zip code to find the weather statistics you desire.

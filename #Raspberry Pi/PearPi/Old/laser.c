@@ -5,8 +5,10 @@
 int main(void){
   wiringPiSetupGpio();
   pinMode(LASER_PIN,OUTPUT);
+  
   while(1){
     digitalRead(LASER_PIN,HIGH);
+    
     if(digitalRead(Laser_PIN)==HIGH)
     {
       printf("Laser On");

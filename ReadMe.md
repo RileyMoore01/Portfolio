@@ -36,8 +36,6 @@
 	<li>JavaScript</li>
 	<li>C++</li>
 	<li>Visual Basic</li>
-	<li></li>
-	<li></li>
 </ul>
 
 
@@ -51,8 +49,6 @@
 	<li>OpenCV</li>
 	<li>Flask</li>
 	<li>jQuery</li>
-	<li></li>
-	<li></li>
 </ul>
 
 ##

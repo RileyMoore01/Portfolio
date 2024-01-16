@@ -1,5 +1,5 @@
 <h1>About</h1>
-<p> I am not aloud to post this due to privacy reasons, however I would like to discuss the tech stack we use at my job.</p>
+<p> I am not aloud to post code here due to privacy reasons at my company, however I would like to discuss the tech stack I use and what I am profficent in.</p>
 
 <h1>Frameworks</h1>
 <ul>
@@ -8,6 +8,8 @@
   <li>ASP.NET Core</li>
   <li>Linq</li>
   <li>Tabulator</li>
+  <li>Vue</li>
+  <li>jQuery</li>
 </ul>
 
 <h1>Languages</h1>
@@ -19,4 +21,5 @@
   <li>HTML & CSS</li>
   <li>SCSS & JQuery</li>
   <li>Javascript</li>
+  <li>Perl</li>
 </ul>

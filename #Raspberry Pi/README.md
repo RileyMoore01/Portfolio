@@ -18,9 +18,9 @@
 
 
 <h1>How to use</h1>
-1.) Make sure everything is plugged in and powered <br />
-2.) Once you power the raspberry pi, my software will run on OS load<br />
-3.) Navigate through the ui to use the applied features <br />
+1.) Make sure the raspberry pi is plugged in and powered <br />
+2.) The GUI will automatically load on OS boot. <br />
+3.) Navigate through the GUI to use the applied features and the press the run button to start! It is that simple! <br />
 
 <h1>Notes</h1>
 There is only 2 3.3 VDC GPIO pins, which will have to be used by the laser and laser receiver. Then we will need an external fan as it is the easiest replacement.

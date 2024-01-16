@@ -4,10 +4,9 @@
 <span>There is a touch-screen gui running off of the raspberry pi that allows the user to change the threshold, set a new reference image, show the camera to ensure it is in the correct position, test the alarm, and of course run the software to start waiting for the belt to move</span><br />
 
 <span>What does it actually do?</span><br />
-1.) There is a ultrasonic distance sensor that will detect when a new shirt comes across the assembly line.<br />
-2.) It will then take a picture of the new shirt and compare to an ideal shirt (setup before-hand for that current print)<br />
-3.) If the shirt is deffective it will alert the workers with a loud alarm and stop the belt to allow workers to fix the issue on the assembly line.<br /><br />
-
+- There is a ultrasonic distance sensor that will detect when a new shirt comes across the assembly line.
+- It will then take a picture of the new shirt and compare to an ideal shirt (setup before-hand for that current print)
+- If the shirt is deffective it will alert the workers with a loud alarm and stop the belt to allow workers to fix the issue on the assembly line.<br />
 <span>Technical Features</span><br />
 - Raspberry Pi
 - Module Camera

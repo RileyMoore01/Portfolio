@@ -1,5 +1,5 @@
 <h1>Introduction</h1>
-<span>In simple terms, this is a product that eleminates bad product off of the assembly line and saves the need for workers detaild attention. Developed for a screenprint manufactoring company.</span><br />
+<span>In simple terms, this is a product that eleminates bad product off of the assembly line and saves the need for workers detaild attention. Developed for a screenprint manufactoring company.</span><br /><br />
 
 <span>What does it actually do?</span><br />
 1.) There is a ultrasoic distance sensor that will detect when a new shirt comes across the assembly line.<br />

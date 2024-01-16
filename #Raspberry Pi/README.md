@@ -1,10 +1,10 @@
 <h1>Introduction</h1>
-<span>In simple terms, this is a product that eleminates bad product off of the assembly line and saves the need for workers detaild attention. Developed for a screenprint manufactoring company.</span>
+<span>In simple terms, this is a product that eleminates bad product off of the assembly line and saves the need for workers detaild attention. Developed for a screenprint manufactoring company.</span><br />
 
-<span>What does it actually do?</span>
-1.) There is a ultrasoic distance sensor that will detect when a new shirt comes across the assembly line.
-2.) It will then take a picture of the new shirt and compare to an ideal shirt (setup before-hand for that current print)
-3.) If the shirt is not deffective then nothing will happen, if it is it will alert the workers with a loud alarm and stop the belt to allow workers to fix the issue on the assembly line.
+<span>What does it actually do?</span><br />
+1.) There is a ultrasoic distance sensor that will detect when a new shirt comes across the assembly line.<br />
+2.) It will then take a picture of the new shirt and compare to an ideal shirt (setup before-hand for that current print)<br />
+3.) If the shirt is not deffective then nothing will happen, if it is it will alert the workers with a loud alarm and stop the belt to allow workers to fix the issue on the assembly line.<br />
 
 
 <h1>How to use</h1>

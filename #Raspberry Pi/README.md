@@ -7,6 +7,7 @@
 - There is a ultrasonic distance sensor that will detect when a new shirt comes across the assembly line.
 - It will then take a picture of the new shirt and compare to an ideal shirt (setup before-hand for that current print)
 - If the shirt is deffective it will alert the workers with a loud alarm and stop the belt to allow workers to fix the issue on the assembly line.<br /><br/>
+
 <span>Technical Features</span><br />
 - Raspberry Pi
 - Module Camera

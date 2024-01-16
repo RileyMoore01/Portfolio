@@ -3,7 +3,7 @@
 <br />
 
 <div align="center">
-    <img src="/img/logo.png" />
+    <img src="download-removebg-preview.png" />
 </div>
 
 <br />

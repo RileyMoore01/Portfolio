@@ -13,4 +13,4 @@
 )
 </pre>
 
-<p>Toutputs true or false based on if the input can traverse the state machine </p>
+<p>Then outputs true or false based on if the input can traverse the state machine </p>

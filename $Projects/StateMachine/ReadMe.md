@@ -1,5 +1,5 @@
 <h1>State Machine</h1>
-<p> Requires a binary path input such as</p>
+<p> Requires a binary path input given in the text files which include things such as</p>
 <pre>
   (
  (

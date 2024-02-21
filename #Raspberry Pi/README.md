@@ -15,10 +15,8 @@
 - Touchscreen GUI
 
 
-
-
 <h1>How to use</h1>
-1.) Make sure the raspberry pi is plugged in and powered <br />
+1.) Make sure the raspberry pi and other hardware listed above are plugged in and powered <br />
 2.) The GUI will automatically load on OS boot. <br />
 3.) Navigate through the GUI to use the applied features and the press the run button to start! It is that simple! <br />
 

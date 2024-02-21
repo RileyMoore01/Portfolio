@@ -8,8 +8,8 @@
 - It will then take a picture of the new shirt and compare to an ideal shirt (setup before-hand for that current print)
 - If the shirt is deffective it will alert the workers with a loud alarm and stop the belt to allow workers to fix the issue on the assembly line.<br /><br/>
 
-<span>Technical Features</span><br />
-- Raspberry Pi
+<span>Hardware requirements</span><br />
+- Raspberry Pi (8GB)
 - Module Camera
 - Ultrasonic sensors
 - Touchscreen GUI

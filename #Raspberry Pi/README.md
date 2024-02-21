@@ -38,9 +38,8 @@ There is only 2 3.3 VDC GPIO pins, which will have to be used by the laser and l
   -vf to flip the camera </pre>
 
 <h1>Laser setup</h1>
-Laser: <br />
-     Pin 17 (9 down from the first row) <br />
-     Ground - Pin 20 (One up and one over) <br />
+ Pin 17 (9 down from the first row) <br />
+ Ground - Pin 20 (One up and one over) <br />
      
 <h1>Other Hardware</h1>
 Fan: <br />

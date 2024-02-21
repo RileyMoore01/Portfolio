@@ -41,7 +41,7 @@ There is only 2 3.3 VDC GPIO pins, which will have to be used by the laser and l
  Pin 17 (9 down from the first row) <br />
  Ground - Pin 20 (One up and one over) <br />
      
-<h1>Other Hardware</h1>
+<h1>Fan</h1>
 Fan: <br />
   Pin 1 (Red) <br />
   Ground - Pin 14 (white) <br />

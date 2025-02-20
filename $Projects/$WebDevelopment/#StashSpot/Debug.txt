@@ -1,0 +1,4 @@
+1.) If you are having a lot of typescript error in vs code do this. use ctrl + shift + P and 
+                          type Typescript: Restart TS Server and this should fix that issue.
+
+2.) To run the project try 'npx expo start' and if that fails then run 'npm install' and retry.

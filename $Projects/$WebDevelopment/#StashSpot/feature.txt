@@ -1,0 +1,20 @@
+
+Functionality:
+- Add a locatoin to a user
+- Add a box to a location
+- Add a item to a box under a location
+
+- Move a box to a different location
+- Move a item to another box 
+
+- Edit location name
+- Edit box name and description
+- Edit Item name and description
+
+Admin Features:
+- ban users
+- delete users
+- send reset password verification
+- view last signed in
+- log user out of all active sessions
+- send magic link (passwordless login)

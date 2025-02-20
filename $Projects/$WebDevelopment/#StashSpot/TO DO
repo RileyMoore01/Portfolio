@@ -1,0 +1,13 @@
+1.) fix routing for everything
+
+5.) update account info screen with relevant properties / make backtrack header "account" -> "Home"
+
+6.) enable row level security in supabase
+
+7.) get db entries to work with authenticated users while row level security is enableds
+
+Pass Location Id, Box Id, and Item Id to a page for navigation after the fact
+
+
+Make console.logs or Alerts able to be seen by user
+

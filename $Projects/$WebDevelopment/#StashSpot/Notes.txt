@@ -1,0 +1,12 @@
+Scripts: 
+1.) npm run generate:types
+2.) npx run start
+
+Reminders:
+1.) Restore supabase if it has been a while since any activity
+
+
+Git Hub Code space:
+1.) npm install
+2.) nvm install 20 --- upgrade Node.js to version 20
+3.) npx expo start
